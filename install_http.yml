@@ -1,0 +1,17 @@
+---
+
+- hosts : all
+  gather_facts : no
+
+#  vars : 
+#   service : apache2
+#    state : present
+  vars_files:
+    - vars/apache_vars.yml
+
+  tasks:
+
+    - name : install httpd package
+      apt :
+        name : "{{ service }}"
+        state : "{{ state }}"

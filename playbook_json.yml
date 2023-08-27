@@ -1,0 +1,14 @@
+---
+
+- name : playbook for generating the json
+
+  hosts : all
+
+  tasks : 
+    - copy : 
+        content : "{{ ansible_facts | to_nice_json}}"
+        dest : /home/azureuser/ansible_facts.json
+    - debug : 
+        msg : 
+          - "The system arch of the managed node is : {{ ansible_facts.architecture }}"
+          - "The list of ipv4 addresses on managed node is : {{ ansible_facts.default_ipv4.address }}"

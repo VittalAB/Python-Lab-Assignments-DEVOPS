@@ -1,0 +1,25 @@
+# ---
+
+# - name : Playook to install httpd
+
+#   apt: 
+#     name : apache2
+#     state : latest
+
+# - name : Start http service
+#   service :
+#     name : apache2
+#     state : started
+
+# - name : Create index.html
+#   copy : 
+#     content : "HELLO BY ansible"
+#     dest : /var/www/html/index.html
+---
+
+- hosts : all
+  gather_facts : no
+  become : yes
+
+  roles:
+  - role: install-httpd

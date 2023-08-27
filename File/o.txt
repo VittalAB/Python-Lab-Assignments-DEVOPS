@@ -1,0 +1,11 @@
+.sretupmoc fo yteirav a no delipmoc eb nac tI
+.seitivitca level-wol eldnah nac tI
+.smargorp tneiciffe secudorp tI
+egaugnal derutcurtS
+nrael ot ysaE
+.C gnisu detnemelpmi neeb evah erawtfos tra eht fo etats eht fo tsoM
+.egaugnaL gnimmargorP metsyS desu ylediw tsom eht si C yadoT
+.C ni nettirw yllatot tsomla SO XINU 3791 yB
+.)ISNA( eutitsnI dradnatS lanoitaN naciremA eht yb 8891 ni dezilamrof saw egaugnal ehT
+0791 dnuora decudortni saw hcihw egaugnal B fo rosseccus a si C
+.XINU dellac metsys gnitarepo na etirw ot detnevni saw C

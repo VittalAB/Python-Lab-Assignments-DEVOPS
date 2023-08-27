@@ -1,0 +1,15 @@
+- hosts : all
+  gather_facts : no
+
+
+  tasks :
+    - user :
+        name : "{{ item.name }}"
+        uid : "{{ item.uid }}"
+      loop :  
+        - name : user1
+          uid : 10000
+        - name : user2
+          uid : 20000
+        - name : user3
+          uid : 30000

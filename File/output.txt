@@ -1,0 +1,11 @@
+C Was Invented To Write An Operating System Called Unix.
+C Is A Successor Of B Language Which Was Introduced Around 1970
+The Language Was Formalized In 1988 By The American National Standard Institue (Ansi).
+By 1973 Unix Os Almost Totally Written In C.
+Today C Is The Most Widely Used System Programming Language.
+Most Of The State Of The Art Software Have Been Implemented Using C.
+Easy To Learn
+Structured Language
+It Produces Efficient Programs.
+It Can Handle Low-Level Activities.
+It Can Be Compiled On A Variety Of Computers.

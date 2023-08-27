@@ -1,0 +1,9 @@
+---
+- name : playbook to demo copy module
+
+  hosts : server1
+  gather_facts : nano
+
+  tasks:
+    - name : copy the content
+    

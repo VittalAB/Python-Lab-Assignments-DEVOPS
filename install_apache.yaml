@@ -1,0 +1,31 @@
+---
+- name: playbook to install apache
+  hosts: server1
+  gather_facts: no # for preventin gathering facts task which is by default done in first 
+
+  tasks:
+    - name: install apache2
+      apt: 
+        name: apache2
+        state: latest
+
+    - name: copy config file
+      copy: 
+        src: data/httpd.original
+        dest: httpd.conf
+    
+    - name: start and enable service
+      service:
+        name: apache2
+        state: restarted
+        enabled: yes
+
+
+# use -b to run as root 
+
+# use -u to conne tas some other user with -u >username>
+
+# use -u <username> -k -b and the  ente the ssh password to become root password then use -K 
+
+
+# -u <username> -k -b -K

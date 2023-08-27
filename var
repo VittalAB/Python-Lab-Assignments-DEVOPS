@@ -1,0 +1,3 @@
+in python private variables can be imported Ex:  _a
+and __a is a strictly private by default can not be imported 
+however we can force import 

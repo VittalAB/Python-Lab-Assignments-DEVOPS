@@ -1,0 +1,26 @@
+---
+- name : Playbook to show usage of variables
+
+- hosts : all
+  gather_facts : no
+
+  vars:
+    service : apache2
+    state : present
+
+  tasks:
+
+    - name : Get httpd server on
+      apt : 
+        name : {{ service }}
+        state : {{ state }}
+
+    # - name: Start apache2 service
+    #   service: 
+    #     name : apache2
+    #     state : started
+    
+    # - name : Create index.html
+    #   copy : 
+    #     content : "Hello by ansible"
+    #     dest : /var/www/html/index.html

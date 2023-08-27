@@ -1,0 +1,21 @@
+  # GNU nano 4.8                                                                                                    conf_dns.yml                                                                                                               
+---
+
+- name : playbook for configuring a playbook
+  hosts : server1
+  gather_facts : no
+  #vars :
+    #"nameserver" : "8.8.8.8/n"
+  vars_files :
+    - ../vars/var.yml
+
+  tasks:
+    - name : copy namserver to resolve.conf
+      copy :
+        content : "nameserver {{ nameserver }}"
+        dest : /etc/resolv.conf
+      register : copy_output
+
+    - name: print output
+      debug:
+        var : copy_output
